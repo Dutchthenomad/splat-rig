@@ -25,6 +25,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <com.splatrig.capture.CoverageView
+        android:id="@+id/coverageView"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toTopOf="@id/panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
     <LinearLayout
         android:id="@+id/panel"
         android:layout_width="0dp"
@@ -34,22 +42,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-        <TextView
-            android:id="@+id/status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Idle"
-            android:textColor="#7CFFB2"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-        <EditText
-            android:id="@+id/serverUrl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="http://192.168.1.10:8080"
-            android:inputType="textUri"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#66FFFFFF" />
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Idle" android:textColor="#7CFFB2" android:textSize="15sp" android:textStyle="bold" />
+        <EditText android:id="@+id/serverUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="http://192.168.1.10:8080" android:inputType="textUri" android:textColor="#FFFFFF" android:textColorHint="#66FFFFFF" />
         <Button android:id="@+id/btnSession" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Start session" />
         <Button android:id="@+id/btnShot" android:layout_width="match_parent" android:layout_height="wrap_content" android:enabled="false" android:text="Snap" />
         <Button android:id="@+id/btnBurst" android:layout_width="match_parent" android:layout_height="wrap_content" android:enabled="false" android:text="Auto 0.7s" />
