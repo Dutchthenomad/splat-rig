@@ -1,0 +1,11 @@
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+worker/.venv/
+worker/runs/
+__pycache__/
+*.pyc
+.DS_Store
+*.iml
+.idea/
